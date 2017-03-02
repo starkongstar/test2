@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>栅格系统</title>
+    <!--响应式, 约束缩放-->
+    <meta name="viewport" content="width=device-with, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" CONTENT="IE=edge">
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">-->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>-->
+
+    <style>
+        .cus-navbar a {
+            color: #ffffff;
+        }
+
+        .cus-menu {
+            border: 1px solid #dddddd;
+        !important;
+            border-radius: 5px;
+        }
+
+        .cus-menu li ul {
+            padding-left: 35px;
+        }
+
+        .cus-table th {
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .cus-table td {
+            font-size: 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .cus-table .pagination {
+            margin: 0px;
+        }
+    </style>
+
+</head>
+<body>
+
+<!--导航头-->
+<nav class="navbar navbar-fixed-top navbar-inverse cus-navbar">
+    <div class="navbar-header">
+        <a href="#" class="navbar-brand"><img src="img/logo.png" class="visible-lg-inline"/>&nbsp;&nbsp;Report
+            System</a>
+    </div>
+    <ul class="nav navbar-nav pull-left">
+        <li><a href="#">Welcome: XP006546</a></li>
+
+        <li>
+            <a href="#">Message <span class="badge">10</span></a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <ul class="nav navbar-nav pull-right">
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Results&nbsp;&nbsp;<span
+                    class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a>PHP1</a></li>
+                    <li><a>HTML1</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools&nbsp;&nbsp;<span
+                    class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a>PHP2</a></li>
+                    <li><a>HTML2</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Lab&nbsp;&nbsp;<span
+                    class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a>PHP3</a></li>
+                    <li><a>HTML3</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools&nbsp;&nbsp;<span
+                    class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a>PHP4</a></li>
+                    <li><a>HTML4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Login Out</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--<ul class="nav nav-pills" style="padding-top: 50px;">-->
+<!--<li class="active"><a href="#">Bill Management</a></li>-->
+<!--<li><a href="#">Resource Management</a></li>-->
+<!--<li><a href="#">Forcast Management</a></li>-->
+<!--</ul>-->
+<!--Content-->
+<div class="row" style="padding-top: 55px;">
+
+    <div class="col-lg-2">
+        <ul class="nav nav-pills nav-stacked cus-menu">
+            <li>
+                <a href="#bill" data-toggle="collapse"> <span class="glyphicon glyphicon-collapse-down"></span> Bill
+                    Management</a>
+
+                <ul class="nav nav-pills nav-stacked collapse in" id="bill">
+                    <li>
+                        <a href="#"> <span class="glyphicon glyphicon glyphicon-transfer"></span>OBTS</a>
+                    </li>
+                    <li>
+                        <a href="#"> <span class="glyphicon glyphicon glyphicon-tasks"></span>RHDB</a>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#bill2" data-toggle="collapse"> <span class="glyphicon glyphicon-collapse-down"></span> Bill
+                    Management</a>
+
+                <ul class="nav nav-pills nav-stacked collapse in" id="bill2">
+                    <li>
+                        <a href="#"> <span class="glyphicon glyphicon glyphicon-transfer"></span>OBTS</a>
+                    </li>
+                    <li>
+                        <a href="#"> <span class="glyphicon glyphicon glyphicon-tasks"></span>RHDB</a>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#bill3" data-toggle="collapse"> <span class="glyphicon glyphicon-collapse-down"></span> Bill
+                    Management</a>
+
+                <ul class="nav nav-pills nav-stacked collapse in" id="bill3">
+                    <li>
+                        <a href="#"> <span class="glyphicon glyphicon glyphicon-transfer"></span>OBTS</a>
+                    </li>
+                    <li>
+                        <a href="#"> <span class="glyphicon glyphicon glyphicon-tasks"></span>RHDB</a>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+    </div>
+
+    <div class="col-lg-10">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <form role="form" class="form-inline">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Input...">
+                        <button class="btn btn-primary form-control">Search</button>
+                    </div>
+                </form>
+            </div>
+            <table class="table table-hover table-bordered cus-table">
+                <thead>
+                <tr>
+                    <th>Column1tttest</th>
+                    <th>Column1</th>
+                    <th>Column1</th>
+                    <th>Column1</th>
+                    <th>Column1</th>
+                    <th>Column1</th>
+                    <th>Column1</th>
+                    <th>Column1</th>
+                    <th>Column1</th>
+                    <th>Column1</th>
+                    <th>Status</th>
+                    <th>Operation</th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+
+                    <td>Test1</td>
+                    <td><a href="#" data-toggle="modal" data-target="#mydialog">【Delete33】</a><a href="#">【Update】</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+
+                    <td>Test1</td>
+                    <td><a href="#">【Delete】</a><a href="#">【Update】</a></td>
+                </tr>
+                <tr>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+
+                    <td>Test1</td>
+                    <td><a href="#">【Delete】</a><a href="#">【Update】</a></td>
+                </tr>
+                <tr>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+
+                    <td>Test1</td>
+                    <td><a href="#">【Delete】</a><a href="#">【Update】</a></td>
+                </tr>
+                <tr>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+
+                    <td>Test1</td>
+                    <td><a href="#">【Delete】</a><a href="#">【Update】</a></td>
+                </tr>
+
+                <tr>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+
+                    <td>Test1</td>
+                    <td><a href="#">【Delete】</a><a href="#">【Update】</a></td>
+                </tr>
+                <tr>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+
+                    <td>Test1</td>
+                    <td><a href="#">【Delete】</a><a href="#">【Update】</a></td>
+                </tr>
+                <tr>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+
+                    <td>Test1</td>
+                    <td><a href="#">【Delete】</a><a href="#">【Update】</a></td>
+                </tr>
+                <tr>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+                    <td>Test1</td>
+
+                    <td>Test1</td>
+                    <td><a href="#">【Delete】</a><a href="#">【Update】</a></td>
+                </tr>
+                <tr>
+                    <td colspan="12">
+
+                        <ul class="pagination">
+                            <li><a href="#">Pre</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">Next</a></li>
+                        </ul>
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="modal" role="dialog" id="mydialog">
+    <div class="modal-dialog"  >
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">This is title<span class="close" data-dismiss="modal">&times;</span></div>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <input type="text" class="form-control">
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
